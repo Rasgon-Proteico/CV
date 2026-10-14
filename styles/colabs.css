@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.principal {
+  text-align: justify;            
+  width: 90%;               
+  max-width: 1000px;            
+  margin: 60px auto 40px auto;
+  padding: 0 15px;
+}
+
+.principal h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.principal p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #d1d5db;
+  margin-bottom: 15px;
+}
+
+.botones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+  gap: 30px;                             /* Espacio entre tarjetas */
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto 60px auto;
+}
+
+.colaboracion {
+  background-color: #1a1a1a;
+  border: 1px solid #2e2e2e;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.colaboracion:hover {
+  transform: translateY(-4px);
+  border-color: #4f46e5;         /* Efecto al pasar el cursor */
+}
+
+.imagen-colaboracion {
+  width: 100%;
+  aspect-ratio: 16 / 9;          /* Fija una proporción uniforme (puedes cambiar a 4/3 o 1/1) */
+  object-fit: cover;             /* Recorta la imagen sobrante sin deformarla ni aplastarla */
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.colaboracion h3 {
+  margin: 10px 0 8px 0;
+  font-size: 1.3rem;
+}
+
+.colaboracion p {
+  color: #9ca3af;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin: 0;
+}
+.boton-proyecto {
+  background-color: #4f46e5;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-align: center;
+  margin-top: auto; 
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.boton-proyecto:hover {
+  background-color: #1d4ed8;   /* Azul un poco más oscuro */
+}
+
+@media (max-width: 768px) {
+  .botones {
+    grid-template-columns: 1fr; 
+    gap: 20px;
+  }
+  
+  .principal h1 {
+    font-size: 2rem;
+  }
+}

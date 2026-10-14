@@ -1,0 +1,56 @@
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Cárdeans </title>
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/contacto.css">
+</head>
+
+<body>
+  <nav class="navbar animar-entrada">
+    <a href="../index.html" class="tab">Me</a>
+    <a href="../Htmls/proyectos.html" class="tab" >Proyectos</a>
+    <a href="../Htmls/colabs.html" class="tab ">Colaboraciones</a>
+    <a href="../Htmls/contacto.html" class="tab active">Contacto</a>
+</nav>
+
+<section class="seccion-contacto animar-entrada">
+    <div class="contenedor-redes-izquierdo">
+        <a href="https://www.instagram.com/angel__crds/" target="_blank">
+            <img src="../ima/Insta.avif" alt="Instagram" class="icono-redes">
+        </a>
+        <a href="https://www.facebook.com/share/14vQzeXziq8/" target="_blank">
+            <img src="../ima/Face.avif" alt="Facebook" class="icono-redes">
+        </a>
+        <a href="http://www.tiktok.com/@rasgon_proteico" target="_blank">
+            <img src="../ima/Tiktok.avif" alt="Tiktok" class="icono-redes">
+        </a>
+    </div>
+
+
+<form class="formulario-contacto" id="formulario-contacto">
+        <h2 style="margin-bottom: 20px; color: #00CCFF;">Contáctame</h2>
+        
+        <input type="email" id="email" name="email" placeholder="Tu Email" class="caja-input" required>
+        
+        <input type="text" id="asunto" name="asunto"placeholder="Asunto" class="caja-input" required>
+        
+        <textarea id="mensaje" name="mensaje" placeholder="Mensaje" class="caja-input area-texto" required></textarea>
+        
+        <button type="submit" id="btn-enviar" class="boton-enviar">Enviar</button>
+
+<p id="estado-envio" style="display:none; margin-top: 15px; font-weight: bold;"></p>
+    </form>
+</section>
+
+
+<footer class="footer-global">
+
+    <p class="copyright">Ángel Cárdenas</p>
+</footer>
+
+  <script src="../javas/contacto.js"></script>
+</body>
+</html>

@@ -1,23 +1,21 @@
   body {
             margin: 0;
             padding: 0;
-            background-color: #192c5c; /* Fondo negro */
-            color: white;           /* Letras blancas */
-            font-family: Arial, sans-serif;
-            
-            /* Centrado total en la pantalla */
+            background-color: #192c5c; 
+            color: white;           
+            font-family: Arial, sans-serif;     
             display: flex;
-            flex-direction: column; /* Alinea los divs uno debajo del otro */
-            justify-content: center; /* Centrado vertical */
-            align-items: center;    /* Centrado horizontal */
-            height: 100vh;          /* Usa todo el alto de la ventana */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;    
+            height: 100vh;          
         }
 .principal {
-            text-align: left;     /* Centra el texto dentro del div */
-            margin: 10px;           /* Espacio entre los dos divs */
+            text-align: left;     
+            margin: 10px;          
             padding-top: 200px; 
-            max-width: 600px; /* Aquí es donde limitas el ancho del "cubito" */
-            border: 1px; /*solid #333; /* Opcional: un borde sutil para ver los límites */
+            max-width: 600px; 
+            border: 1px; 
         }
 
 
@@ -46,7 +44,7 @@
 
 .imagen-colaboracion {
   width: 100%;
-  aspect-ratio: 16 / 9;          /* Fija una proporción uniforme (puedes cambiar a 4/3 o 1/1) */
+  aspect-ratio: 16 / 9;          /* Fija una proporción uniforme  */
   object-fit: cover;             /* Recorta la imagen sobrante sin deformarla ni aplastarla */
   border-radius: 8px;
   margin-bottom: 15px;
@@ -75,7 +73,7 @@
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 .boton-proyecto:hover {
-  background-color: #1d4ed8;   /* Azul un poco más oscuro */
+  background-color: #1d4ed8;    
 }
 
 @media (max-width: 768px) {

@@ -55,13 +55,13 @@ body {
 
 .colaboracion:hover {
   transform: translateY(-4px);
-  border-color: #4f46e5;         /* Efecto al pasar el cursor */
+  border-color: #4f46e5;        
 }
 
 .imagen-colaboracion {
   width: 100%;
-  aspect-ratio: 16 / 9;          /* Fija una proporción uniforme (puedes cambiar a 4/3 o 1/1) */
-  object-fit: cover;             /* Recorta la imagen sobrante sin deformarla ni aplastarla */
+  aspect-ratio: 16 / 9;          
+  object-fit: cover;            
   border-radius: 8px;
   margin-bottom: 15px;
   display: block;

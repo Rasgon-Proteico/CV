@@ -1,7 +1,7 @@
   body {
             margin: 0;
             padding: 0;
-            background-color: #2B0C08; 
+            background-color:#192c5c ; 
             color: white;          
             font-family: Arial, sans-serif;
             display: flex;
@@ -29,8 +29,8 @@
 .caja-input {
     width: 125%;
     height: 50;
-    background-color: #111; /* Negro grisáceo */
-    border: 1px solid #333; /* Borde sutil */
+    background-color: #111;
+    border: 1px solid #333;
     color: white;
     padding: 12px;
     margin-bottom: 15px;
@@ -43,15 +43,15 @@
     resize: none; 
 }
 
-/* Efecto al hacer clic en las cajas */
+
 .caja-input:focus {
     outline: none;
-    border-color: #00ffcc; /* Color neón que ya usamos */
+    border-color: #00CCFF; 
 }
 
-/* Botón de enviar */
+
 .boton-enviar {
-    background-color: #00ffcc;
+    background-color: #00CCFF;
     color: black;
     border: none;
     padding: 12px 25px;
@@ -64,4 +64,28 @@
 .boton-enviar:hover {
     background-color: white;
     transform: translateY(-2px);
+}
+.contenedor-redes-izquierdo {
+    display: flex;
+    flex-direction:row ; 
+    justify-content: center;
+    gap: 30px; 
+    padding-top: 100px;
+    width: 100px;
+    height:100px; 
+}
+.contenedor-redes-izquierdo a {
+    font-size: 35px;
+    text-decoration: none; 
+  }
+.icono-redes {
+    margin-top: 20px;
+    width: 50px;      
+    height: 50px;      
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.icono-redes:hover {
+    transform: scale(1.15);
 }

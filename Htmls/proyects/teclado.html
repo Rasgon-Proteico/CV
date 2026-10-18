@@ -22,13 +22,15 @@
     <h2>Teclado Lily58</h2>
     </div>
     <br>
-    <p>Teclado dividido de 64 teclas, incluidos los macros nvim<p>
+    <p>Teclado dividido de 68 teclas, incluidos los macros nvim    </p>
+    <br>
+    <p> La documentación referente a este proyecto se encuentra en <a href="https://github.com/Rasgon-Proteico/Teclado.git" target="_blank" class="link"> este repo</a>; aquí encontrarás los pasos para poder compilarlo tener mi configuración actual </p>
     <br>
     <p>Este proyecto surgió de la necesidad de poder crear algo para poder tener una mayor eficiencia en el tecleo y así mismo poder sacar mis proyectos más rápído, sin embargo durante este proceso surgieron varios problemas que poco a poco fuí solucionando</p>
    <br>
     <p>De los primeros problemas que surgieron fué la distribución inicial, al ser un teclado con menos teclas, claramente no tendría a mi disposición todas las teclas de un teclado estándar, así como un teclado 100%, por ende sin estas ya no estaba la parte numérica, las teclas de función, e incluso las flechas, lo cual no era mucho cambio debido a que venía ya de usar un teclado 60%, sin embargo, este al ser más parecido a un 40%, representó un reto de distribución, el cual se divide en 3 capas: QWERTY, Lower y Raise. O bien: arriba, enmedio y abajo</p>
     <br>
-    <img src="../../ima/raise.jpeg" alt="Teclado Lily58" class="imagen-teclado">
+    <img src="../../ima/qwerty.jpeg" alt="Teclado Lily58" class="imagen-teclado">
     <br><br>
     <p>Para poder realizar este teclado primero elegí la distribución de teclas de <a href="https://github.com/kata0510/Lily58.git" target="_blank" class="link"> Lily58 </a> original pero como no me acomodaban al 100%, las fuí modificando poco a poco hasta lograr la que se adaptaba a mí, al notar lo seguido que usaba las teclas Fin, Inicio, suprimir y Altgr, opté por colocarlas en la parte superior derecha del lado derecho de este
     </p>
@@ -45,28 +47,33 @@
     <br>
     <p>La animación original que venía con el firmware de QMK no me agradaba mucho, por lo que opté por usar una animación de Lain, la cual se muestra en la siguiente imagen, esta animación es un gif que se encuentra en la carpeta del proyecto y que se puede modificar a gusto del usuario, sin embargo, para poder mostrar esta animación en el teclado, se tuvo que modificar el código del firmware de QMK, ya que este no soporta gifs, por lo que se tuvo que convertir el gif a un formato compatible con el firmware de QMK, el cual es un formato de imagen llamado .c, el cual es un formato de imagen que permite mostrar imágenes en el teclado, sin embargo, este formato no soporta animaciones, por lo que se tuvo que crear un script en Python que convierte el gif a una serie de imágenes en formato .c, las cuales se muestran en el teclado como una animación.</p>
     <br>
+    <div class="contenedor-animacion">
      <img src="../../gif/t1.gif" alt="Animación de Lain" class="imagen-animacion">  
      <img src="../../gif/t2.gif" alt="Animación de Lain" class="imagen-animacion"> 
      <img src="../../gif/t3.gif" alt="Animación de Lain" class="imagen-animacion">
+    </div>
      <br>
      <br>
      <p> También cambié el "Hello navi" por un "Hello Rasgon", de su formato horizontal original a uno vertical, más asociado a una escritura china o japonesa</p>
     <p>Se escucha muy complejo pero realmente no lo es y menos si es algo que te interesa, la desición de usar esta animación fué debido a la armonía visual dada y que era más interactiva que solo el logo de Lily58, así mismo da una sensación mayor de inmersión con lo que se está haciendo, lo que debes tener cuidado siempre es con respecto a las orientaciones de la animación.</p>
-    <br> Para el case o chasis mismo de este teclado no lo modelé a mano, sino que usé un modelo ya existente de Lily58, el cual se puede encontrar en <a href="https://www.printables.com/model/730538-aurora-lily58-mx-style-switch-case" target="_blank" class="link"> Printables </a> , el cual es un sitio para modelos de impresión 3D, como el cual está hecho el case de mi teclado 
+    <br> 
+    <p>Para el case o chasis mismo de este teclado no lo modelé a mano, sino que usé un modelo ya existente de Lily58, el cual se puede encontrar en <a href="https://www.printables.com/model/730538-aurora-lily58-mx-style-switch-case" target="_blank" class="link"> Printables </a> , el cual es un sitio para modelos de impresión 3D, como el cual está hecho el case de mi teclado </p>
+    <br>   
     <h2>Materiales</h2>
-    <br>
-    <p>Los materiales que se usaron para este proyecto fueron los siguientes:</p>
-    <ul>
+    <ul class="lista-materiales">
         <li>PCB Lily58</li>
-        <li>Switches Outemu brwon</li>
+        <li>Switches Outemu brown</li>
         <li>Keycaps PBT</li>
         <li>Case de impresión 3D</li>
         <li>Microcontrolador Pro Micro (2)</li>
-        <li>Display OLED 128x64 (2)</li>
+        <li>Display OLED 128x64 SSD1306 (2)</li>
         <li>Entrada para jack 3.5mm (2)</li>
-        <li>Conectores JST (2)</li>
-        <li>Micro botones (2)</li>
-        <li>LEDs para un toque más estético</li>
+        <li>Micro botones de 2 pines (2)</li>
+        <li>LEDs SMD para un toque más estético</li>
+        <li>Tornillos M3 (18)</li>
+        <li>Tornillos M4 (10)</li>
+        <li>Espaciadores M3 7mm (9)</li>
+        <li>Espaciadores M4 1cm (5)</li>
     </ul>
   </div>
  

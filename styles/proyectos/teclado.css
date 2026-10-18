@@ -40,3 +40,14 @@ body {
     text-decoration: none;
 
   }
+
+.lista-materiales {
+    padding-left: 15px; 
+
+  }
+.contenedor-animacion {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px; 
+}

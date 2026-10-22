@@ -43,8 +43,10 @@ body {
 
 .lista-materiales {
     padding-left: 15px; 
-
-  }
+}
+.lista-pasos {
+    padding-left:20px; 
+}
 .contenedor-animacion {
     display: flex;
     justify-content: center;

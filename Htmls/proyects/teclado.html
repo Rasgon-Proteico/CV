@@ -79,6 +79,23 @@
         <li>Espaciadores M3 7mm (9)</li>
         <li>Espaciadores M4 1cm (5)</li>
     </ul>
+    <br>
+    <h2>Programación</h2>
+    <br>
+    <p>La programación del teclado se realizó en QMK, el cual es un firmware open source para teclados mecánicos, el cual permite una gran personalización y flexibilidad, permitiendo crear macros, capas y demás funciones que permiten una mayor eficiencia al momento de escribir código</p>
+    <br>
+    <p>Para poder programar la distribución y el acomodo como tal, vas a instalar QMK, seguido de eso van estos pasos/comandos:</p>
+
+    <ol class="lista-pasos">
+        <li> qmk new-keymap -kb lily58/rev1 -km kmp </li>
+        <li> cd ~/qmk_firmware/keyboards/lily58/keymaps/kmp </li>
+        <li> nvim keymap.c </li>
+        <li> qmk compile -kb lily58/rev1 -km kmp </li>
+        <li> qmk flash -kb lily58/rev1 -km kmp </li>
+    </ol>
+        <br>
+        <p> Ya con esto te saldrá una ventana para poder compilar el firmware, tienes que hacer un corto entre el pin RST y GND del microcontrolador, esto hará que el teclado entre en modo de programación y se pueda flashear el firmware, en la placa de Lily58 ya viene con un botón</p>
+
   </div>
  
 <footer class="footer-global">

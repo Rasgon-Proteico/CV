@@ -26,76 +26,70 @@
     <h2>Teclado Lily58</h2>
     </div>
     <br>
-    <p>Teclado dividido de 68 teclas, incluidos los macros nvim    </p>
+<p>Teclado ergonómico dividido de 68 teclas, optimizado con macros dedicadas para Neovim.</p>
     <br>
-    <p> La documentación referente a este proyecto se encuentra en <a href="https://github.com/Rasgon-Proteico/Teclado.git" target="_blank" class="link"> este repo</a>; aquí encontrarás los pasos para poder compilarlo tener mi configuración actual </p>
+    <p>La documentación completa y los archivos para compilar mi distribución actual se encuentran en <a href="https://github.com/Rasgon-Proteico/Teclado.git" target="_blank" class="link">este repositorio</a>.</p>
     <br>
-    <p>Este proyecto surgió de la necesidad de poder crear algo para poder tener una mayor eficiencia en el tecleo y así mismo poder sacar mis proyectos más rápído, sin embargo durante este proceso surgieron varios problemas que poco a poco fuí solucionando</p>
-   <br>
-    <p>De los primeros problemas que surgieron fué la distribución inicial, al ser un teclado con menos teclas, claramente no tendría a mi disposición todas las teclas de un teclado estándar, así como un teclado 100%, por ende sin estas ya no estaba la parte numérica, las teclas de función, e incluso las flechas, lo cual no era mucho cambio debido a que venía ya de usar un teclado 60%, sin embargo, este al ser más parecido a un 40%, representó un reto de distribución, el cual se divide en 3 capas: QWERTY, Lower y Raise. O bien: arriba, enmedio y abajo</p>
+    <p>Este proyecto nació de la necesidad de optimizar mi velocidad de escritura y ergonomía en el flujo de trabajo diario. A lo largo del diseño y ensamblaje surgieron diversos retos técnicos que fui resolviendo de forma iterativa.</p>
     <br>
-    <img src="../../ima/qwerty.jpeg" alt="Teclado Lily58" class="imagen-teclado">
+    <p>El primer desafío fue diseñar la distribución de teclas (keymap). Al pasar de un teclado convencional (e incluso de uno con formato 60%) a un factor de forma compacto similar a un 40%, prescindí de teclas físicas como el bloque numérico, la fila de funciones (F1–F12) y las flechas de dirección. Para compensarlo eficientemente, organicé la distribución en tres capas lógicas: <strong>QWERTY</strong> (base), <strong>Lower</strong> y <strong>Raise</strong>.</p>
+    <br>
+    <img src="../../ima/qwerty.jpeg" alt="Distribución QWERTY del Teclado Lily58" class="imagen-teclado">
     <br><br>
-    <p>Para poder realizar este teclado primero elegí la distribución de teclas de <a href="https://github.com/kata0510/Lily58.git" target="_blank" class="link"> Lily58 </a> original pero como no me acomodaban al 100%, las fuí modificando poco a poco hasta lograr la que se adaptaba a mí, al notar lo seguido que usaba las teclas Fin, Inicio, suprimir y Altgr, opté por colocarlas en la parte superior derecha del lado derecho de este
-    </p>
+    <p>Tomé como punto de partida la distribución original del <a href="https://github.com/kata0510/Lily58.git" target="_blank" class="link">Lily58</a> y la adapté progresivamente a mis hábitos de uso. Por ejemplo, al notar la alta frecuencia con la que utilizaba teclas como <em>Inicio, Fin, Supr</em> y <em>AltGr</em>, decidí ubicarlas en la esquina superior del bloque derecho para un acceso inmediato.</p>
     <br>
-    <img src="../../ima/raise.jpeg" alt="Teclado Lily58" class="imagen-teclado">
+    <img src="../../ima/raise.jpeg" alt="Capa Raise del Teclado Lily58" class="imagen-teclado">
     <br><br>
-    <p>En otro lado del teclado, en la parte izquierda coloqué comandos propios para mi editor de texto, nvim como se muestra en las siguientes imágenes, esto me permite tener un acceso más rápido a los comandos que más uso y así mismo poder tener una mayor eficiencia al momento de escribir código, ya que no tengo que estar moviendo mis manos a otras partes del teclado para poder ejecutar estos comandos, sino que los tengo a la mano y puedo ejecutarlos con mayor rapidez</p>
-   <br>
-    <img src="../../ima/low.jpeg" alt="Teclado Lily58" class="imagen-teclado">
+    <p>En el bloque izquierdo integré combinaciones y atajos directos para Neovim (nvim). Esta configuración mantiene las manos en la fila central (home row), eliminando desplazamientos innecesarios y aumentando notablemente la velocidad y comodidad al programar.</p>
+    <br>
+    <img src="../../ima/low.jpeg" alt="Capa Lower del Teclado Lily58" class="imagen-teclado">
     <br><br>
-    <p>En cuanto a la parte de la programación del teclado, este se realizó en <a href= "https://qmk.fm/" target="_blank" class="link"> QMK </a> , el cual es un firmware open source para teclados mecánicos, el cual permite una gran personalización y flexibilidad, permitiendo crear macros, capas y demás funciones que permiten una mayor eficiencia al momento de escribir código</p>
+    <p>El control del hardware se gestiona mediante <a href="https://qmk.fm/" target="_blank" class="link">QMK</a>, un firmware open source para teclados mecánicos que ofrece total flexibilidad para configurar capas dinámicas, macros avanzadas y comportamientos personalizados.</p>
     <br>
-   <h2>Pantalla</h2>
+    <h2>Pantalla OLED</h2>
     <br>
-    <p>La animación original que venía con el firmware de QMK no me agradaba mucho, por lo que opté por usar una animación de Lain, la cual se muestra en la siguiente imagen, esta animación es un gif que se encuentra en la carpeta del proyecto y que se puede modificar a gusto del usuario, sin embargo, para poder mostrar esta animación en el teclado, se tuvo que modificar el código del firmware de QMK, ya que este no soporta gifs, por lo que se tuvo que convertir el gif a un formato compatible con el firmware de QMK, el cual es un formato de imagen llamado .c, el cual es un formato de imagen que permite mostrar imágenes en el teclado, sin embargo, este formato no soporta animaciones, por lo que se tuvo que crear un script en Python que convierte el gif a una serie de imágenes en formato .c, las cuales se muestran en el teclado como una animación.</p>
+    <p>Para la pantalla OLED decidí sustituir la animación por defecto por una secuencia de <em>Serial Experiments Lain</em>. Debido a que el firmware de QMK no reproduce archivos GIF de forma nativa, desarrollé un script en Python para descomponer la animación en fotogramas individuales y exportarlos como arreglos de bytes en formato <code>.c</code>, permitiendo renderizarlos de manera secuencial y fluida en la pantalla.</p>
     <br>
     <div class="contenedor-animacion">
-     <img src="../../gif/t1.gif" alt="Animación de Lain" class="imagen-animacion">  
-     <img src="../../gif/t2.gif" alt="Animación de Lain" class="imagen-animacion"> 
-     <img src="../../gif/t3.gif" alt="Animación de Lain" class="imagen-animacion">
+        <img src="../../gif/t1.gif" alt="Animación de Lain cuadro 1" class="imagen-animacion">  
+        <img src="../../gif/t2.gif" alt="Animación de Lain cuadro 2" class="imagen-animacion"> 
+        <img src="../../gif/t3.gif" alt="Animación de Lain cuadro 3" class="imagen-animacion">
     </div>
-     <br>
-     <br>
-     <p> También cambié el "Hello navi" por un "Hello Rasgon", de su formato horizontal original a uno vertical, más asociado a una escritura china o japonesa</p>
-    <p>Se escucha muy complejo pero realmente no lo es y menos si es algo que te interesa, la desición de usar esta animación fué debido a la armonía visual dada y que era más interactiva que solo el logo de Lily58, así mismo da una sensación mayor de inmersión con lo que se está haciendo, lo que debes tener cuidado siempre es con respecto a las orientaciones de la animación.</p>
+    <br><br>
+    <p>También personalicé el texto de estado cambiando el clásico «Hello Navi» por «Hello Rasgon», rotando la orientación de horizontal a vertical al estilo de la caligrafía japonesa tradicional.</p>
+    <p>El resultado ofrece una estética mucho más interactiva e inmersiva que el logotipo estático original, cuidando la sincronización de cuadros y la orientación de la pantalla.</p>
     <br> 
-    <p>Para el case o chasis mismo de este teclado no lo modelé a mano, sino que usé un modelo ya existente de Lily58, el cual se puede encontrar en <a href="https://www.printables.com/model/730538-aurora-lily58-mx-style-switch-case" target="_blank" class="link"> Printables </a> , el cual es un sitio para modelos de impresión 3D, como el cual está hecho el case de mi teclado </p>
+    <p>Para el chasis utilicé un diseño optimizado para impresión 3D disponible en <a href="https://www.printables.com/model/730538-aurora-lily58-mx-style-switch-case" target="_blank" class="link">Printables</a>, compatible con switches tipo MX.</p>
     <br>   
     <h2>Materiales</h2>
+    <br>
     <ul class="lista-materiales">
         <li>PCB Lily58</li>
-        <li>Switches Outemu brown</li>
+        <li>Switches Outemu Brown</li>
         <li>Keycaps PBT</li>
-        <li>Case de impresión 3D</li>
-        <li>Microcontrolador Pro Micro (2)</li>
-        <li>Display OLED 128x64 SSD1306 (2)</li>
-        <li>Entrada para jack 3.5mm (2)</li>
-        <li>Micro botones de 2 pines (2)</li>
-        <li>LEDs SMD para un toque más estético</li>
-        <li>Tornillos M3 (18)</li>
-        <li>Tornillos M4 (10)</li>
-        <li>Espaciadores M3 7mm (9)</li>
-        <li>Espaciadores M4 1cm (5)</li>
+        <li>Chasis impreso en 3D</li>
+        <li>Microcontroladores Pro Micro (2)</li>
+        <li>Displays OLED 128x64 SSD1306 (2)</li>
+        <li>Conectores Jack TRRS de 3.5 mm (2)</li>
+        <li>Pulsadores de reinicio de 2 pines (2)</li>
+        <li>LEDs SMD (retroiluminación estética)</li>
+        <li>Tornillería: M3 (18 pzas) y M4 (10 pzas)</li>
+        <li>Espaciadores: M3 de 7 mm (9 pzas) y M4 de 1 cm (5 pzas)</li>
     </ul>
     <br>
-    <h2>Programación</h2>
+    <h2>Compilación y Flasheo</h2>
     <br>
-    <p>La programación del teclado se realizó en QMK, el cual es un firmware open source para teclados mecánicos, el cual permite una gran personalización y flexibilidad, permitiendo crear macros, capas y demás funciones que permiten una mayor eficiencia al momento de escribir código</p>
-    <br>
-    <p>Para poder programar la distribución y el acomodo como tal, vas a instalar QMK, seguido de eso van estos pasos/comandos:</p>
+    <p>Una vez configurada la distribución en el entorno de QMK, el proceso de compilación y carga se realiza con los siguientes comandos:</p>
 
     <ol class="lista-pasos">
-        <li> qmk new-keymap -kb lily58/rev1 -km kmp </li>
-        <li> cd ~/qmk_firmware/keyboards/lily58/keymaps/kmp </li>
-        <li> nvim keymap.c </li>
-        <li> qmk compile -kb lily58/rev1 -km kmp </li>
-        <li> qmk flash -kb lily58/rev1 -km kmp </li>
+        <li><code>qmk new-keymap -kb lily58/rev1 -km kmp</code></li>
+        <li><code>cd ~/qmk_firmware/keyboards/lily58/keymaps/kmp</code></li>
+        <li><code>nvim keymap.c</code></li>
+        <li><code>qmk compile -kb lily58/rev1 -km kmp</code></li>
+        <li><code>qmk flash -kb lily58/rev1 -km kmp</code></li>
     </ol>
-        <br>
-        <p> Ya con esto te saldrá una ventana para poder compilar el firmware, tienes que hacer un corto entre el pin RST y GND del microcontrolador, esto hará que el teclado entre en modo de programación y se pueda flashear el firmware, en la placa de Lily58 ya viene con un botón</p>
-
+    <br>
+    <p>Al ejecutar la orden de flasheo, la terminal esperará a que el microcontrolador entre en modo <em>bootloader</em>. Para activarlo, basta con presionar el botón de reset integrado en la PCB (o realizar un puente momentáneo entre los pines <strong>RST</strong> y <strong>GND</strong>).</p>
   </div>
  
 <footer class="footer-global">

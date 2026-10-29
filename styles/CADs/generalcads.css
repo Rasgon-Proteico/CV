@@ -75,7 +75,7 @@ body {
     aspect-ratio: 1 / 1;  
     object-fit: cover;
     border-radius: 6px;
-    border: 1px solid #2e2e2e;
+    border: 1px solid #2E2E2E;
     display: block;
 }
 
@@ -89,12 +89,12 @@ body {
   margin-top: 50px;
   margin-left: 10px;
   padding: 10px 40px;
-  background-color: #007bff;
+  background-color: #007BFF;
   color: white;
   text-decoration: none;
   border-radius: 6px;
   font-family: sans-serif;
 }
 .boton-regresar:hover {
-  background-color: #0056b3;
+  background-color: #0056B3;
 }
